@@ -98,7 +98,13 @@ a:hover {
   100% {
     background-color: rgb(83, 61, 124);
   }
+  25% {
+    background-color: rgba(172, 83, 172,);
+  }
   50% {
     background-color: rgb(128, 101, 179);
+  }
+  75% {
+    background-color: rgba(172, 83, 172,);
   }
 }
