@@ -1,5 +1,4 @@
 :root {
-  /* --accent-color1: #c33; */
   --text-color1: white;
 }
 
@@ -9,7 +8,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid black; */
 }
 
 html {
@@ -44,7 +42,6 @@ header {
     rgb(100, 80, 150),
     rgb(135, 101, 179)
   );
-  /* border-bottom: 2px solid black; */
 }
 
 .navbar {
