@@ -9,13 +9,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 html {
   height: 100%;
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,20 +24,26 @@ body {
   height: 100%;
   overflow-x: hidden;
   background: linear-gradient(
-    45deg,
+    90deg,
     #124e66,
     rgb(100, 80, 150),
     rgb(135, 101, 179)
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 header {
   position: fixed;
   width: 100vw;
   height: 10rem;
-  background-color: var(--accent-color1);
+  background: linear-gradient(
+    90deg,
+    #124e66,
+    rgb(100, 80, 150),
+    rgb(135, 101, 179)
+  );
   /* border-bottom: 2px solid black; */
 }
 
@@ -66,7 +73,7 @@ a {
   color: var(--text-color1);
 }
 
-a:hover {
+.nav-link a:hover {
   border-bottom: 2px solid white;
   transform: scale(1.2);
   transition-duration: 0.25s;
@@ -101,13 +108,58 @@ a:hover {
   text-align: center;
 }
 
-.projects h2 {
+.section-header {
   font-size: 4rem;
   color: var(--text-color1);
   margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .project-tile h3 {
   font-size: 3rem;
-  color: var(--text-color1)
+  color: var(--text-color1);
+  margin-bottom: 5rem;
+}
+
+.project-tile h3:hover,
+.contact-container:hover {
+  text-decoration: underline;
+}
+
+.project-tile img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8rem;
+}
+
+a img:hover {
+  border: 2px solid white;
+}
+
+.contact {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60rem;
+  padding-bottom: 20rem;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-container {
+  font-size: 4rem;
+  color: var(--text-color1);
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
 }
